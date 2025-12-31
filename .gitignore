@@ -1,1 +1,42 @@
 .metadata
+target/
+
+# STS / Eclipse specific files
+.classpath
+.project
+.settings/
+
+# IntelliJ IDEA specific files
+.idea/
+*.iml
+
+# VS Code specific files
+.vscode/
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Build output
+*.class
+
+# Package archives
+*.jar
+*.war
+*.ear
+
+# Temporary files
+*.tmp
+*.swp
+
+# Generated files
+.mvn/wrapper/maven-wrapper.jar
+
+# Spring Boot specific
+spring.log
+
+# Test reports
+surefire-reports/
