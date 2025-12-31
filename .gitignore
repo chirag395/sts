@@ -1,6 +1,8 @@
 .metadata
 target/
 
+target
+
 # STS / Eclipse specific files
 .classpath
 .project
