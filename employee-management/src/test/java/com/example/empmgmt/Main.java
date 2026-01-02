@@ -20,7 +20,7 @@ public class Main {
                 ? new JdbcEmployeeDao()
                 : new InMemoryEmployeeDao();
 
-        System.out.println("=== Employee Management Console (" + daoType.toUpperCase() + " DAO) ===");
+        System.out.println("Employee Management");
         try (Scanner scanner = new Scanner(System.in)) {
             boolean exit = false;
             while (!exit) {
@@ -43,7 +43,7 @@ public class Main {
                 }
             }
         }
-        System.out.println("Goodbye!");
+        System.out.println("Have a nice day");
     }
 
     private static void printMenu() {
@@ -100,7 +100,7 @@ public class Main {
         System.out.print("New Department: ");
         String dept = sc.nextLine().trim();
         BigDecimal salary = readBigDecimal(sc, "New Salary: ");
-
+ 
         Employee emp = new Employee(id, name, dept, salary);
         Employee updated = dao.updateEmployee(emp);
         System.out.println("Updated: " + updated);

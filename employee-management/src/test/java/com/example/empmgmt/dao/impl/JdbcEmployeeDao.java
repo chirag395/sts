@@ -13,7 +13,7 @@ import java.util.NoSuchElementException;
 
 public class JdbcEmployeeDao implements EmployeeDao {
 
-    private void validate(Employee emp) {
+    protected void validate(Employee emp) {
         if (emp == null) throw new IllegalArgumentException("Employee cannot be null");
         if (emp.getName() == null || emp.getName().isBlank())
             throw new IllegalArgumentException("Employee name cannot be empty");
